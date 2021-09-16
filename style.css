@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  /* box-sizing borderbox: recomendaçao video do youtube/ncesar */
+  padding: 0;
+  /* padding espaçamento interno */
+  margin: 0;
+  /* padding espaçamento externo */
+  font-family: 'Poppins', sans-serif;
+  /* Definimos a primeira fonte e a segunda é caso aja algum erro com a primeira. sans-serif está presente em qualquer navegador. */
+}
+#movieForm {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  /* absolute posiciona acima dos outros */
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: 0 auto;
+  background: #918c8cf0;
+  padding: 30px;
+  width: 600px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+header {
+  width: 100%;
+  display: flex;
+  background: #e50914;
+  color: #fff;
+  padding: 20px;
+  justify-content: center;
+  /* alinhamos o conteudo ao centro */
+  font-weight: bold;
+  /* estilo da fonte como bold */
+}
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn-add-movie {
+  border: 1px solid #cb1212;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  background: #ff455b;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+input {
+  padding: 5px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  width: 300px;
+}
+#movieForm button {
+  margin-top: 10px;
+  border: 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.alert {
+  display: none;
+}
+.movie-card {
+  display: flex;
+  width: 500px;
+  border: 1px solid #eee;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.content img {
+  width: 30%;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+.movie-details {
+  width: 100%;
+}
